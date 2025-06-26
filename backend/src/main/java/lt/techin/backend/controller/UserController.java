@@ -1,14 +1,15 @@
 package lt.techin.backend.controller;
 
+
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
-import lt.techin.praktika.dto.user.AdminRequestDTO;
-import lt.techin.praktika.dto.user.UserMapper;
-import lt.techin.praktika.dto.user.UserRegistrationDTO;
-import lt.techin.praktika.dto.user.UserResponseDTO;
-import lt.techin.praktika.model.User;
-import lt.techin.praktika.repository.UserRepository;
-import lt.techin.praktika.service.UserService;
+import lt.techin.backend.dto.user.AdminRequestDTO;
+import lt.techin.backend.dto.user.UserMapper;
+import lt.techin.backend.dto.user.UserRegistrationDTO;
+import lt.techin.backend.dto.user.UserResponseDTO;
+import lt.techin.backend.model.User;
+import lt.techin.backend.repository.UserRepository;
+import lt.techin.backend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
