@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Admin from "./components/Admin";
 import { ToastContainer } from "react-toastify";
 import Mechanic from "./components/Mechanic";
+import AutoServices from "./components/AutoServices";
 
 function App() {
   const { token, user } = useAuth();
@@ -31,6 +32,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/mechanics" element={<Mechanic />} />
+          <Route path="/services" element={<AutoServices />} />
           {isAdmin && <Route path="/admin" element={<Admin />} />}
         </Routes>
         <ToastContainer position="top-center" autoClose={3000} />

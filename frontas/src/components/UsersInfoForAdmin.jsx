@@ -7,7 +7,6 @@ function UsersInfoForAdmin() {
 
   const { user } = useAuth();
 
-  // Čia deklaruojam isAdmin
   const isAdmin =
     user?.roles?.some((role) => role?.name === "ROLE_ADMIN") || false;
 
@@ -45,7 +44,7 @@ function UsersInfoForAdmin() {
         });
 
         if (response.ok) {
-          fetchUsers(); // Po pašalinimo – atnaujiname sąrašą
+          fetchUsers();
         } else {
           console.error("Nepavyko pašalinti vartotojo");
           alert("Nepavyko pašalinti vartotojo.");

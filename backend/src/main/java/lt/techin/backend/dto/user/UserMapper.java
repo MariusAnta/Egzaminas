@@ -25,7 +25,7 @@ public class UserMapper {
     Role defaultRole = new Role();
     defaultRole.setId(1L);
 
-    return new User(encodedPassword, userRegistrationDTO.username(), List.of(defaultRole));
+    return new User(userRegistrationDTO.username(), encodedPassword, List.of(defaultRole));
   }
 
   public static UserResponseDTO toDTO(User user) {

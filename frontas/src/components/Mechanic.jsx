@@ -5,7 +5,6 @@ function Mechanic() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-
   const fetchMechanic = async () => {
     try {
       const response = await fetch("/api/mechanics");
@@ -39,17 +38,21 @@ function Mechanic() {
   //   };
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold text-center mb-6">Solo Ekskursijos</h1>
+      <h1 className="text-2xl font-bold text-center mb-6">Mechanikai</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {mechanic.map((mechanic) => (
           <div
             key={mechanic.id}
             className="bg-white shadow-md rounded-2xl p-4 hover:shadow-lg transition"
           >
-            <h2 className="text-xl font-semibold mb-1">{mechanic.name}</h2>
-            <p className="text-gray-600">{mechanic.surname}</p>
-            <p className="text-gray-600">{mechanic.specialization}</p>
-            <p className="text-gray-600 ">{mechanic.city}</p>
+            <h2 className="text-xl font-semibold mb-1">
+              Vardas: {mechanic.name}
+            </h2>
+            <p className="text-gray-600">Pavarde: {mechanic.surname}</p>
+            <p className="text-gray-600">
+              Specializacija: {mechanic.specialization}
+            </p>
+            <p className="text-gray-600 ">Miestas: {mechanic.city}</p>
           </div>
         ))}
       </div>
