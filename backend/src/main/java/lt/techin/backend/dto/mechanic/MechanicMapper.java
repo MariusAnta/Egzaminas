@@ -1,8 +1,5 @@
 package lt.techin.backend.dto.mechanic;
 
-import lt.techin.backend.dto.autoService.AutoServiceRequestDTO;
-import lt.techin.backend.dto.autoService.AutoServiceResponseDTO;
-import lt.techin.backend.model.AutoService;
 import lt.techin.backend.model.Mechanic;
 
 import java.util.List;
@@ -41,4 +38,4 @@ public class MechanicMapper {
             .toList();
   }
 }
-}
+

@@ -15,8 +15,8 @@ public class UserMapper {
     adminRole.setId(2L);
 
     return new User(
-            encodedPassword,
             adminRequestDTO.username(),
+            encodedPassword,
             List.of(userRole, adminRole)
     );
   }

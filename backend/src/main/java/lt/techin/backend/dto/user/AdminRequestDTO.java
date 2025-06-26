@@ -6,10 +6,10 @@ import jakarta.validation.constraints.Size;
 public record AdminRequestDTO(
         @NotNull
         @Size(min = 5, max = 100)
-        String password,
+        String username,
 
         @NotNull
         @Size(min = 5, max = 100)
-        String username
+        String password
 ) {
 }

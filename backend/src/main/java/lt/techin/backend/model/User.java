@@ -31,7 +31,7 @@ public class User implements UserDetails {
           inverseJoinColumns = @JoinColumn(name = "role_id")
   )
   private List<Role> roles = new ArrayList<>();
-  
+
 
   public User(String username, String password, List<Role> roles) {
     this.username = username;
@@ -80,6 +80,5 @@ public class User implements UserDetails {
   public Collection<? extends GrantedAuthority> getAuthorities() {
     return this.roles;
   }
-
-
+  
 }
