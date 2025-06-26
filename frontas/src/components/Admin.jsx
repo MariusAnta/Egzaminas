@@ -1,6 +1,6 @@
 import React from "react";
 import AdminRegistrationModal from "./AdminRegistrationModal";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import UsersInfoForAdmin from "./UsersInfoForAdmin";
 import { useForm } from "react-hook-form";
 

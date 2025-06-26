@@ -25,17 +25,6 @@ function Mechanic() {
   if (loading) return <p className="text-center p-4">Kraunama...</p>;
   if (error) return <p className="text-center text-red-500 p-4">{error}</p>;
 
-  //   const updateMechanic = async (mechanic) => {
-  //     await fetch(`/api/mechanics/${mechanic.id}`, {
-  //       method: "PUT",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(mechanic),
-  //     });
-  //     setMechanic(mechanic);
-
-  //   };
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold text-center mb-6">Mechanikai</h1>
@@ -53,6 +42,9 @@ function Mechanic() {
               Specializacija: {mechanic.specialization}
             </p>
             <p className="text-gray-600 ">Miestas: {mechanic.city}</p>
+            <p className="text-gray-600">
+              Kuris servisas: {mechanic.autoService.name}
+            </p>
           </div>
         ))}
       </div>

@@ -12,6 +12,7 @@ public class MechanicMapper {
             mechanicRequestDTO.surname(),
             mechanicRequestDTO.specialization(),
             mechanicRequestDTO.city()
+
     );
   }
 

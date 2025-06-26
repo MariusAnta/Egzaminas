@@ -17,6 +17,7 @@ public class Mechanic {
   private String specialization;
   private String city;
 
+  
   public Mechanic(String name, String specialization, String surname, String city) {
     this.name = name;
     this.specialization = specialization;
