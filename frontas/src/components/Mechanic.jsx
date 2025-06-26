@@ -42,9 +42,6 @@ function Mechanic() {
               Specializacija: {mechanic.specialization}
             </p>
             <p className="text-gray-600 ">Miestas: {mechanic.city}</p>
-            <p className="text-gray-600">
-              Kuris servisas: {mechanic.autoService.name}
-            </p>
           </div>
         ))}
       </div>
